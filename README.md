@@ -1,6 +1,6 @@
 <div align="center">
 
-# DeepPaperNote
+# PaperReading
 
 **Turn one complex paper into an Obsidian note you will actually want to keep.**
 
