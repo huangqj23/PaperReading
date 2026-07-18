@@ -20,7 +20,7 @@ Use the following source-of-truth hierarchy when working in this repository:
 
 - `skills/deeppapernote/SKILL.md` is the canonical workflow definition
 - `skills/deeppapernote/scripts/` and `skills/deeppapernote/references/` are part of the reusable core
-- `README.md` and `README.zh-CN.md` are user-facing documentation, not the canonical workflow
+- `README.md` and `README.en.md` are user-facing documentation, not the canonical workflow
 - `skills/deeppapernote/agents/openai.yaml` is the Codex adapter layer
 - `.claude-plugin/plugin.json` and `.codex-plugin/plugin.json` are host manifests and should stay thin
 
@@ -51,11 +51,11 @@ The repository is layered as follows:
 - `skills/deeppapernote/references/` stores durable workflow and writing guidance
 - `skills/deeppapernote/scripts/` implements the deterministic pipeline and support utilities
 - `skills/deeppapernote/agents/openai.yaml` is the Codex adapter
-- `README.md` and `README.zh-CN.md` are user-facing documentation
+- `README.md` and `README.en.md` are user-facing documentation
 
 ## Environment and Onboarding Boundary
 
-- user installation, configuration, and onboarding belong primarily in `README.md` and `README.zh-CN.md`
+- user installation, configuration, and onboarding belong primarily in `README.md` and `README.en.md`
 - `skills/deeppapernote/scripts/check_environment.py` is a maintenance and troubleshooting utility
 - DeepPaperNote should not reintroduce a separate public `doctor`, `setup`, or `start` skill surface
 

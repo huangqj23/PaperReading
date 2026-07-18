@@ -237,7 +237,7 @@ First public alpha release of DeepPaperNote.
 
 ### Documentation
 
-- Bilingual project README (`README.md` and `README.zh-CN.md`).
+- Bilingual project README (`README.md` and `README.en.md`).
 - MIT license and initial project metadata via `pyproject.toml`.
 
 ### Changed
