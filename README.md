@@ -1,14 +1,14 @@
 <div align="center">
 
-# DeepPaperNote
+# PaperReading
 
 **把一篇复杂论文，变成一篇真正值得长期保留的 Obsidian 笔记。**
 
 [简体中文](./README.md) | [English](./README.en.md)
 
-[![主页](https://img.shields.io/badge/homepage-online-2563eb)](https://917dhj.github.io/DeepPaperNote/)
-[![状态](https://img.shields.io/badge/status-stable-16a34a)](https://github.com/917Dhj/DeepPaperNote)
-[![版本](https://img.shields.io/github/v/release/917Dhj/DeepPaperNote?display_name=tag&color=0f766e)](https://github.com/917Dhj/DeepPaperNote/releases)
+[![主页](https://img.shields.io/badge/homepage-online-2563eb)](https://huangqj23.github.io/PaperReading/)
+[![状态](https://img.shields.io/badge/status-stable-16a34a)](https://github.com/huangqj23/PaperReading)
+[![版本](https://img.shields.io/github/v/release/huangqj23/PaperReading?display_name=tag&color=0f766e)](https://github.com/huangqj23/PaperReading/releases)
 [![许可证](https://img.shields.io/badge/license-MIT-c9a227)](./LICENSE)
 [![Agents](https://img.shields.io/badge/agents-Claude%20Code%20%2B%20Codex-7c3aed)](./skills/deeppapernote/SKILL.md)
 [![输出](https://img.shields.io/badge/output-Obsidian-16a34a)](./skills/deeppapernote/references/obsidian-format.md)
@@ -16,7 +16,7 @@
 
 </div>
 
-[![DeepPaperNote Hero](./assets/hero-academic.svg)](https://917dhj.github.io/DeepPaperNote/)
+[![PaperReading Hero](./assets/PaperReading.png)](https://huangqj23.github.io/PaperReading/)
 
 <p align="center">
   <em>深读一篇论文，沉淀一页学术 Wiki。</em>

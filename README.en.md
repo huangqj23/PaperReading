@@ -6,9 +6,9 @@
 
 [简体中文](./README.md) | [English](./README.en.md)
 
-[![Homepage](https://img.shields.io/badge/homepage-online-2563eb)](https://917dhj.github.io/DeepPaperNote/)
-[![Status](https://img.shields.io/badge/status-stable-16a34a)](https://github.com/917Dhj/DeepPaperNote)
-[![Release](https://img.shields.io/github/v/release/917Dhj/DeepPaperNote?display_name=tag&color=0f766e)](https://github.com/917Dhj/DeepPaperNote/releases)
+[![Homepage](https://img.shields.io/badge/homepage-online-2563eb)](https://huangqj23.github.io/PaperReading/)
+[![Status](https://img.shields.io/badge/status-stable-16a34a)](https://github.com/huangqj23/PaperReading)
+[![Release](https://img.shields.io/github/v/release/huangqj23/PaperReading?display_name=tag&color=0f766e)](https://github.com/huangqj23/PaperReading/releases)
 [![License](https://img.shields.io/badge/license-MIT-c9a227)](./LICENSE)
 [![Agents](https://img.shields.io/badge/agents-Claude%20Code%20%2B%20Codex-7c3aed)](./skills/deeppapernote/SKILL.md)
 [![Output](https://img.shields.io/badge/output-Obsidian-16a34a)](./skills/deeppapernote/references/obsidian-format.md)
@@ -16,7 +16,7 @@
 
 </div>
 
-[![DeepPaperNote Hero](./assets/hero-academic.svg)](https://917dhj.github.io/DeepPaperNote/)
+[![PaperReading Hero](./assets/PaperReading.png)](https://huangqj23.github.io/PaperReading/)
 
 <p align="center">
   <em>Read one paper deeply. Add one durable page to your academic wiki.</em>

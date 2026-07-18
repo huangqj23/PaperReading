@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DeepPaperNote：把一篇复杂论文转化为结构清晰、证据充分、适合长期保存的 Obsidian 深度笔记。"
+    />
+    <meta name="theme-color" content="#f5f0e7" />
+    <meta property="og:title" content="DeepPaperNote｜单篇论文深度阅读工作流" />
+    <meta
+      property="og:description"
+      content="保留方法、证据、图表与边界，把论文沉淀为可复用的 Obsidian 学术知识页。"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://huangqj23.github.io/PaperReading/"
+    />
+    <title>DeepPaperNote｜把论文沉淀为学术知识页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span>DeepPaperNote</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="#features">能力</a>
+          <a href="#workflow">流程</a>
+          <a href="#install">安装</a>
+          <a
+            class="nav-github"
+            href="https://github.com/huangqj23/PaperReading"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Evidence-first paper reading</p>
+            <h1>
+              把一篇复杂论文，<br />沉淀成一页真正有用的<span>学术知识。</span>
+            </h1>
+            <p class="hero-lead">
+              DeepPaperNote
+              面向单篇论文深度阅读，保留研究问题、方法机制、实验结果、图表语境和证据边界，最终生成适合长期积累的
+              Obsidian 中文笔记。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#install">开始使用</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/huangqj23/PaperReading"
+                target="_blank"
+                rel="noreferrer"
+              >
+                查看源码
+              </a>
+            </div>
+            <ul class="hero-meta" aria-label="项目特性">
+              <li>单篇精读</li>
+              <li>中文输出</li>
+              <li>Obsidian 优先</li>
+            </ul>
+          </div>
+
+          <div
+            class="note-preview"
+            role="img"
+            aria-label="DeepPaperNote 输出示例"
+          >
+            <div class="preview-toolbar">
+              <span class="window-dots"><i></i><i></i><i></i></span>
+              <span>attention-is-all-you-need.md</span>
+              <span class="preview-status">已校验</span>
+            </div>
+            <div class="preview-body">
+              <p class="preview-property">tags: <b>papers/ai</b></p>
+              <h2>Attention Is All You Need</h2>
+              <p class="preview-subtitle">用注意力机制重构序列建模</p>
+              <div class="preview-rule"></div>
+              <p class="preview-label">一句话总结</p>
+              <p>
+                Transformer
+                以自注意力替代循环结构，在增强并行性的同时建立长距离依赖。
+              </p>
+              <div class="metric-grid">
+                <div>
+                  <span>核心机制</span>
+                  <strong>Self-Attention</strong>
+                </div>
+                <div>
+                  <span>关键结果</span>
+                  <strong>28.4 BLEU</strong>
+                </div>
+              </div>
+              <div class="formula">Attention(Q,K,V) = softmax(QKᵀ / √dₖ)V</div>
+              <div class="evidence-line">
+                <span>证据覆盖</span>
+                <i><b></b></i>
+                <strong>92%</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="statement section">
+          <p class="section-kicker">输出才是产品</p>
+          <h2>不是把摘要写得更长，<br />而是把论文的论证链重新建立起来。</h2>
+          <p>
+            脚本负责抽取和组织材料，模型负责理解、判断与写作。来源不足时停止，证据充分时才完成。
+          </p>
+        </section>
+
+        <section class="features section" id="features">
+          <article class="feature feature-dark">
+            <span class="feature-index">01</span>
+            <div class="feature-icon">深</div>
+            <h3>深度笔记，不是摘要改写</h3>
+            <p>
+              追踪论文证明了什么、没有证明什么，解释方法为何产生对应结果，并保留可复现细节。
+            </p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">02</span>
+            <div class="feature-icon">析</div>
+            <h3>MinerU 结构化抽取</h3>
+            <p>
+              可选接入 MinerU v4，将 PDF 转为包含公式、表格和图片的结构化
+              Markdown。
+            </p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">03</span>
+            <div class="feature-icon">译</div>
+            <h3>保留结构的中文翻译</h3>
+            <p>
+              通过 OpenAI
+              兼容接口翻译抽取结果，同时保护公式、代码、链接、图片与表格。
+            </p>
+          </article>
+          <article class="feature feature-accent">
+            <span class="feature-index">04</span>
+            <div class="feature-icon">存</div>
+            <h3>Obsidian 长期沉淀</h3>
+            <p>
+              笔记、属性与论文图片按统一目录保存，形成可搜索、可链接、可复用的学术
+              Wiki。
+            </p>
+          </article>
+        </section>
+
+        <section class="workflow section" id="workflow">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">从论文到笔记</p>
+              <h2>一条有纪律的深度阅读路径</h2>
+            </div>
+            <p>
+              每个阶段都有明确输入和产物；取证、规划、写作、校验与保存不会被静默跳过。
+            </p>
+          </div>
+          <ol class="steps">
+            <li>
+              <span>01</span>
+              <div>
+                <strong>确认身份</strong>
+                <p>锁定唯一论文、作者与版本。</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <strong>抽取来源</strong>
+                <p>读取全文、元数据、公式与图表。</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <strong>规划重点</strong>
+                <p>建立主张、实验与证据映射。</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <strong>深度写作</strong>
+                <p>解释机制、结果、局限与启示。</p>
+              </div>
+            </li>
+            <li>
+              <span>05</span>
+              <div>
+                <strong>质量校验</strong>
+                <p>检查事实依据、结构与可读性。</p>
+              </div>
+            </li>
+            <li>
+              <span>06</span>
+              <div>
+                <strong>正式保存</strong>
+                <p>写入 Obsidian 与论文图片目录。</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="install section" id="install">
+          <div class="install-copy">
+            <p class="section-kicker section-kicker-light">现在开始</p>
+            <h2>安装 Skill，<br />然后交给它一篇论文。</h2>
+            <p>
+              标题、DOI、URL、arXiv ID、本地 PDF 或 Zotero 条目都可以作为输入。
+            </p>
+            <a
+              href="https://github.com/huangqj23/PaperReading#-快速开始"
+              target="_blank"
+              rel="noreferrer"
+            >
+              阅读完整使用文档 →
+            </a>
+          </div>
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span><i></i><i></i><i></i></span>
+              <b>Terminal</b>
+            </div>
+            <div class="terminal-body">
+              <p><span>$</span> npx skills add huangqj23/PaperReading</p>
+              <p><span>$</span> python3 -m pip install PyMuPDF</p>
+              <p class="terminal-comment"># 把论文交给 Agent</p>
+              <p class="terminal-prompt">
+                给这篇论文生成深度笔记：<br />https://arxiv.org/abs/1706.03762
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span>DeepPaperNote</span>
+        </a>
+        <p>深读一篇论文，沉淀一页学术 Wiki。</p>
+        <div>
+          <a href="https://github.com/huangqj23/PaperReading">GitHub</a>
+          <a href="https://github.com/huangqj23/PaperReading/blob/main/LICENSE"
+            >MIT License</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
