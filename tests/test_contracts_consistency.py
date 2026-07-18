@@ -33,7 +33,7 @@ REFERENCE_ROUTING_DOCS = (
 PDF_CONTRACT_DOCS = (
     "skills/deeppapernote/SKILL.md",
     "README.md",
-    "README.zh-CN.md",
+    "README.en.md",
 )
 PDF_FAIL_CLOSED_BANNED_PHRASES = (
     "clearly labeled degraded",
@@ -57,7 +57,7 @@ def test_deleted_reference_routers_stay_removed() -> None:
     assert not (references / "workflow.md").exists()
     assert not (references / "model-synthesis.md").exists()
 
-    for readme_name in ("README.md", "README.zh-CN.md"):
+    for readme_name in ("README.md", "README.en.md"):
         readme = (PROJECT_ROOT / readme_name).read_text(encoding="utf-8")
         assert "references/workflow.md" not in readme
         assert "references/model-synthesis.md" not in readme
@@ -673,8 +673,8 @@ def test_pdf_contract_banned_phrase_matcher_catches_allowed_fallbacks() -> None:
 
 def test_pdf_contract_docs_try_supported_acquisition_before_stopping() -> None:
     skill_text = (PROJECT_ROOT / "skills" / "deeppapernote" / "SKILL.md").read_text(encoding="utf-8")
-    readme_text = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
-    readme_zh_text = (PROJECT_ROOT / "README.zh-CN.md").read_text(encoding="utf-8")
+    readme_en_text = (PROJECT_ROOT / "README.en.md").read_text(encoding="utf-8")
+    readme_zh_text = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
 
     source_priority = skill_text.index("## Tool and Source Priority")
     stop_policy = skill_text.index("If PDF or evidence quality is insufficient")
@@ -688,7 +688,7 @@ def test_pdf_contract_docs_try_supported_acquisition_before_stopping() -> None:
     ):
         assert required_source in skill_text[source_priority:stop_policy]
 
-    assert "A title, DOI, URL, arXiv ID, or local PDF all work." in readme_text
+    assert "A title, DOI, URL, arXiv ID, or local PDF all work." in readme_en_text
     assert "标题、DOI、URL、本地 PDF 都可以" in readme_zh_text
 
 
